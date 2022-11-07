@@ -1,0 +1,12 @@
+import random
+total_sum = 0
+iteration_num = 0
+counting_up_to = 1000
+condition = False
+while not condition:
+    x = random.randint(1, 6)
+    iteration_num += 1
+    total_sum = total_sum + x
+    condition = (total_sum > counting_up_to)
+    if condition:
+        print("Suma oczek wyniosła ", total_sum, " i osiągnięto ją po ", iteration_num, " rzutach.")
