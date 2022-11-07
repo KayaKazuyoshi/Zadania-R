@@ -1,0 +1,19 @@
+sum_per_toss <- 0
+for (i in 1:100) {
+  if (i == 1) {
+    cat("Numer iteracji: ", i, ", suma oczek wynosi: ")
+    print(0)
+  } else if (0 == (i %% 2 )) {
+    cat("Numer iteracji: ", i, ", suma oczek wynosi: ")
+    for (k in (i - 1)) {
+      x <- sample(1:12, 1)
+      sum_per_toss <- sum_per_toss + x}
+    print(sum_per_toss)
+  } else if (1 == (i %% 2)) {
+    cat("Numer interacji: ", i, ", suma oczek wynosi: ")
+    for (k in (i - 1)) {
+      x <- sample(1:6, 1)
+      sum_per_toss <- sum_per_toss + x}
+    print(sum_per_toss)
+  }
+}
