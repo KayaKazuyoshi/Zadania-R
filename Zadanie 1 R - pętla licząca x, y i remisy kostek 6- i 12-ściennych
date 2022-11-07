@@ -1,0 +1,25 @@
+condition <- FALSE
+x_count <- 0
+y_count <- 0
+draws <- 0
+total_count <- 0
+counting_up_to <- 100
+while (!condition){
+  x <- sample(1:6, 1)
+  y <- sample(1:12, 1)
+  if (x > y) {
+    x_count <- x_count + 1
+    print("x")
+  } else if (y>x) {
+    y_count <- y_count + 1
+    print("y")
+  } else {
+    draws <- draws + 1
+    print("remis")
+  }  
+  total_count <- total_count + 1
+  condition <- (total_count == counting_up_to)
+  if (condition){
+    cat("Naliczono", x_count, "iksów, \n", y_count, "igreków i \n", draws, "remisów. \n")
+  }
+}
