@@ -1,0 +1,23 @@
+import random
+x_count = 0
+y_count = 0
+draws = 0
+counting_up_to = 100
+counts = 0
+condition = False
+while not condition:
+    x = random.randint(1, 6)
+    y = random.randint(1, 12)
+    if x > y:
+        x_count += 1
+        print("x")
+    elif x < y:
+        y_count += 1
+        print("y")
+    else:
+        draws += 1
+        print("remis")
+    counts += 1
+    condition = (counts == counting_up_to)
+    if condition:
+        print("Naliczono", x_count, "iksów, ", y_count, "igreków i ", draws, "remisów.")
