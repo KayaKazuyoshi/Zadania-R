@@ -1,0 +1,13 @@
+counting_up_to <- 1000
+condition <- FALSE
+current_count <- 0
+iteration_number <- 0
+while (!condition) {
+  x <- sample(1:6, 1)
+  current_count <- current_count + x
+  iteration_number <- iteration_number + 1
+  condition <- (current_count > counting_up_to)
+  if (condition) {
+    cat("Liczba rzutów wyniosła ", iteration_number, ", a suma oczek to ", current_count)
+  }
+}
