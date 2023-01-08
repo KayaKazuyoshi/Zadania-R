@@ -1,0 +1,7 @@
+fibo <- function(k) {
+  if(k>= 3) {
+    fibo(k-1)+fibo(k-2)
+  } else {
+  return(1)
+  }
+}
