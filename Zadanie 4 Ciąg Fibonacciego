@@ -5,3 +5,14 @@ fibo <- function(k) {
   return(1)
   }
 }
+
+
+fib2 <- function(k) {
+    for(i in k) {
+      if(k>=3){
+        return(fib2(k-1)+fib2(k-2))
+    } else {
+        return(1)
+      }
+    }
+  }
